@@ -197,6 +197,13 @@ kafking.producer.produce(kafking.topics.myTopic1, -1, message, 1);
 kafking.producer.produce(kafking.topics.myTopic2, -1, message, 1);
 ```
 
+### Logging
+
+To set the logging level of Kafking use the following environment variables before requiring Kafking:
+
+* `KAFKING_LOG_LEVEL` Set it a valid Bunyan log level value to activate console logging (Typically you'd need either `info` or `debug` as values).
+* `KAFKING_LOG_NO_COLORS` Set this to any value to disable color when logging.
+
 ## Releasing
 
 1. Update the changelog bellow.
