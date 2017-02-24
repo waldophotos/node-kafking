@@ -24,7 +24,8 @@
     "test": "mocha -b test/spec && eslint lib/**"
   },
   "dependencies": {
-    "bluebird": "^3.4.6"
+    "bluebird": "^3.4.6",
+    "kafka-avro": "^0.7.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
