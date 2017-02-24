@@ -1,13 +1,13 @@
-# Awesome Lib name
+# kafking
 
-> The awesome lib description
+> The king of Kafka, awesome kafka-avro wrapper for your pleasure.
 
 ## Install
 
 Install the module using NPM:
 
 ```
-npm install @waldo/awesome-lib --save
+npm install @waldo/kafking --save
 ```
 
 ## Documentation
