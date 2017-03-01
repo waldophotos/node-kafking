@@ -222,6 +222,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.0.2**, *01 Mar 2017*
+    - Provide a promisified version of `commit` at `consumer.commitAsync()`.
 - **v0.0.1**, *24 Feb 2017*
     - Big Bang
 
