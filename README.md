@@ -147,12 +147,20 @@ Once initialized you can now start consuming on the topics you registered:
 ```js
 kafking.on('myTopic1', function(message) {
     console.log('Received message on topic:', message.topic, 'Value:', message.parsed);
+    kafking.consumer.commit(message, function(err) {
+        console.log('message committed!');
+    })
 });
 
 kafking.on('myTopic2', function(message) {
     console.log('Received message on topic:', message.topic, 'Value:', message.parsed);
+    kafking.consumer.commit(message, function(err) {
+        console.log('message committed!');
+    })
 });
 ```
+
+> Kafking provides a promisified version of `commit` as `kafking.consumer.commitAsync()`.
 
 ### Configure for Producer Usage Only
 
