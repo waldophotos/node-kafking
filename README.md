@@ -109,10 +109,10 @@ There are two crucial properties you need to know about:
 
 Kafking exposes the node-rdkafka `producer` instance in a property with the same name. To produce you just need to invoke the `produce()` method of the producer.
 
-To produce, you will need a Topic Configuration which is provided by Kafking in the property named `topics` which is an object, with keys, the topic names you want to produce on. These keys contain references to the initialized node-rdkafka `producer.Topic` instance.
+To produce, you will need a Topic Configuration which is provided by Kafking in the property named `topic` which is an object, with keys, the topic names you want to produce on. These keys contain references to the initialized node-rdkafka `producer.Topic` instance.
 
 ```js
-const topicConf = kafking.topics.MyTopicName;
+const topicConf = kafking.topic.MyTopicName;
 kafking.producer.produce(topicConf, partition, newMessage, key);
 ```
 
@@ -199,10 +199,10 @@ const message = {
 
 
 // Produce on "myTopic1":
-kafking.producer.produce(kafking.topics.myTopic1, -1, message, 1);
+kafking.producer.produce(kafking.topic.myTopic1, -1, message, 1);
 
 // Produce on "myTopic2":
-kafking.producer.produce(kafking.topics.myTopic2, -1, message, 1);
+kafking.producer.produce(kafking.topic.myTopic2, -1, message, 1);
 ```
 
 ### Logging
