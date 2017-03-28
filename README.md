@@ -109,9 +109,15 @@ There are two crucial properties you need to know about:
 
 Kafking exposes the node-rdkafka `producer` instance in a property with the same name. To produce you just need to invoke the `produce()` method of the producer.
 
-To produce, you will need a Topic Configuration which is provided by Kafking in the property named `topic` which is an object, with keys, the topic names you want to produce on. These keys contain references to the initialized node-rdkafka `producer.Topic` instance.
+To produce, you will need to define the topic as a string using the exact value you used when you setup the produce topics.
+
+Alternatively you may use the Topic Configuration which is provided by Kafking in the property named `topic` which is an object, with keys, the topic names you want to produce on. These keys contain references to the initialized node-rdkafka `producer.Topic` instance.
 
 ```js
+// Produce with string literal
+kafking.producer.produce('my-topic-name', partition, newMessage, key);
+
+// Produce with Topic Configuration
 const topicConf = kafking.topic.MyTopicName;
 kafking.producer.produce(topicConf, partition, newMessage, key);
 ```
@@ -198,11 +204,11 @@ const message = {
 };
 
 
-// Produce on "myTopic1":
+// Produce on "myTopic1" using Topic Configuration:
 kafking.producer.produce(kafking.topic.myTopic1, -1, message, 1);
 
-// Produce on "myTopic2":
-kafking.producer.produce(kafking.topic.myTopic2, -1, message, 1);
+// Produce on "myTopic2" using string literal:
+kafking.producer.produce('myTopic2', -1, message, 1);
 ```
 
 ### Logging
@@ -222,6 +228,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.1.0**, *28 Mar 2017*
+    - Allow producing with string literals as topics, sugar.
 - **v0.0.2**, *01 Mar 2017*
     - Provide a promisified version of `commit` at `consumer.commitAsync()`.
 - **v0.0.1**, *24 Feb 2017*
