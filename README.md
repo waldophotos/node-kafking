@@ -238,4 +238,4 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## License
 
-Copyright Waldo, Inc. All rights reserved.
+Copyright Waldo, Inc. [Licensed under the MIT](/LICENSE).
