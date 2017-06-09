@@ -31,6 +31,7 @@ The options are:
 
 * `noConsumer` {boolean} Set to true to disable booting a consumer.
 * `consumerOpts` {Object} Consumer options, required if `consumerGroup` is not set.
+* `consumerTopicOpts` {Object} Consumer topic specific options, not required.
 * `consumerGroup` {string} Use default options and just define the consumerGroup.
 * `consumerTopics` {Array.<string>} The topics you want to consume on.
 
@@ -228,6 +229,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.1.1**, *09 Jun 2017*
+    - Introduced the `consumerTopicOpts` to define options at topic level.
 - **v0.1.0**, *28 Mar 2017*
     - Allow producing with string literals as topics, sugar.
 - **v0.0.2**, *01 Mar 2017*
@@ -237,4 +240,4 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## License
 
-Copyright Waldo, Inc. All rights reserved.
+Copyright Waldo, Inc. [Licensed under the MIT](/LICENSE).
