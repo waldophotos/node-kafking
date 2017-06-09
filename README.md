@@ -229,6 +229,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.1.1**, *09 Jun 2017*
+    - Introduced the `consumerTopicOpts` to define options at topic level.
 - **v0.1.0**, *28 Mar 2017*
     - Allow producing with string literals as topics, sugar.
 - **v0.0.2**, *01 Mar 2017*
