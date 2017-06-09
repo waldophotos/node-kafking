@@ -31,6 +31,7 @@ The options are:
 
 * `noConsumer` {boolean} Set to true to disable booting a consumer.
 * `consumerOpts` {Object} Consumer options, required if `consumerGroup` is not set.
+* `consumerTopicOpts` {Object} Consumer topic specific options, not required.
 * `consumerGroup` {string} Use default options and just define the consumerGroup.
 * `consumerTopics` {Array.<string>} The topics you want to consume on.
 
