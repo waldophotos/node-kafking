@@ -229,6 +229,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.1.2**, *06 Jul 2017*
+    - Log schemaId on debug logs.
 - **v0.1.1**, *09 Jun 2017*
     - Introduced the `consumerTopicOpts` to define options at topic level.
 - **v0.1.0**, *28 Mar 2017*
