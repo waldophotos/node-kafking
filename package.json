@@ -1,6 +1,6 @@
 {
   "name": "@waldo/kafking",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/kafking",
   "description": "The king of Kafka, awesome kafka-avro wrapper for your pleasure.",
   "homepage": "https://github.com/waldo/node-kafking",
