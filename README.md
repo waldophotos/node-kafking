@@ -229,6 +229,8 @@ To set the logging level of Kafking use the following environment variables befo
 
 ## Release History
 
+- **v0.1.3**, *20 Mar 2018*
+    - Add `cip` as a dependency on package.json.
 - **v0.1.2**, *06 Jul 2017*
     - Log schemaId on debug logs.
 - **v0.1.1**, *09 Jun 2017*
